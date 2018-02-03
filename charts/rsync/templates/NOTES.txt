@@ -1,0 +1,7 @@
+This chart is only tested (and intended to run) on minikube.
+
+To expose a local directory to this server, open a new terminal and run:
+
+  $ minikube mount $MYDIR:/mnt/share
+
+Where $MYDIR is the path to whatever directory you want to share.

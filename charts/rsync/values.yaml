@@ -1,0 +1,12 @@
+# Default values for rsync.
+replicaCount: 1
+image:
+  repository: technosophos/rsync
+  tag: latest
+  pullPolicy: IfNotPresent
+service:
+  name: mk-rsync
+  type: ClusterIP
+  externalPort: 873
+  internalPort: 873
+mountPath: /mnt/share
